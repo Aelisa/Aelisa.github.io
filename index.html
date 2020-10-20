@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="liuzhentao">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-Tensorflow" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/20/Tensorflow/" class="article-date">
+  <time datetime="2020-10-20T13:58:31.777Z" itemprop="datePublished">2020-10-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Tensorflow"><a href="#Tensorflow" class="headerlink" title="Tensorflow"></a>Tensorflow</h1><h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>TensorFlow是Google开源的第二代用于数字计算（numerical computation）的软件库。它是基于数据流图的处理框架，图中的节点表示数学运算（mathematical operations），边表示运算节点之间的数据交互。TensorFlow从字面意义上来讲有两层含义，一个是Tensor，它代表的是节点之间传递的数据，通常这个数据是一个多维度矩阵（multidimensional data arrays）或者一维向量；第二层意思Flow,指的是数据流，形象理解就是数据按照流的形式进入数据运算图的各个节点。</p>
+<p>TensorFlow是一个非常灵活的框架，它能够运行在个人电脑或者服务器的单个或多个CPU和GPU上，甚至是移动设备上。TensorFlow最早是Google大脑团队为了研究机器学习和深度神经网络而开发的，但后来发现这个系统足够通用，能够支持更加广泛的应用。</p>
+<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><p>它不仅是可以用来做神经网络算法研究，也可以用来做普通的机器学习算法，甚至是只要你能够把计算表示成数据流图，都可以用tensorflow</p>
+<p>这个工具可以部署在个人PC上，单CPU，多CPU，单GPU，多gpu，单机多gpu，多机多cpu，多机多gpu，android手机上等，几乎涵盖各种场景的计算设备。</p>
+<p>在谷歌，研究科学家可以用TensorFlow研究新的算法，产品团队可以用它来训练实际的产品模型，更重要的是这样就更容易将研究成果转化到实际的产品。另外Google在白皮书上说道，几乎所有的产品都用到了TensorFlow，比如搜索排序，语音识别，谷歌相册，自然语言处理等。</p>
+<p>、、、、、、、、、、</p>
+<p>自动做微分运算</p>
+<p>机器学习中的很多算法都用到了梯度，使用TensorFlow，它将自动帮你求出梯度，只要你定义好目标函数，增加数据就好了。</p>
+<p>、、、、、、、、、、</p>
+<p>语言灵活语言选项</p>
+<p>TensorFlow使用C++实现的，然后用Python封装，暂时只支持这两种语言，谷歌号召社区通过SWIG开发更多的语言接口来支持</p>
+<p>、、、、、、、、、</p>
+<p>最大化性能最大化性能</p>
+<p>通过对线程，队列和异步计算的支持(头等舱)support), TensorFlow可以运行在各种硬件上，同时根据计算的需要，合理将运算分配到相应的设备，比如卷积就分配到GPU上。</p>
+<h2 id="注意：在使用TensorFlow之前，有必要了解如下几个概念："><a href="#注意：在使用TensorFlow之前，有必要了解如下几个概念：" class="headerlink" title="注意：在使用TensorFlow之前，有必要了解如下几个概念："></a>注意：在使用TensorFlow之前，有必要了解如下几个概念：</h2><h3 id="计算是用图的形式表示的。"><a href="#计算是用图的形式表示的。" class="headerlink" title="计算是用图的形式表示的。"></a>计算是用图的形式表示的。</h3><h3 id="Sessions是执行的入口，类似于SparkContext。"><a href="#Sessions是执行的入口，类似于SparkContext。" class="headerlink" title="Sessions是执行的入口，类似于SparkContext。"></a>Sessions是执行的入口，类似于SparkContext。</h3><h3 id="数据是用tensor表示的。"><a href="#数据是用tensor表示的。" class="headerlink" title="数据是用tensor表示的。"></a>数据是用tensor表示的。</h3><h3 id="Variables用来表示可变状态，比如模型参数。"><a href="#Variables用来表示可变状态，比如模型参数。" class="headerlink" title="Variables用来表示可变状态，比如模型参数。"></a>Variables用来表示可变状态，比如模型参数。</h3><h3 id="使用feeds和fetches从运算节点输入和输出数据。"><a href="#使用feeds和fetches从运算节点输入和输出数据。" class="headerlink" title="使用feeds和fetches从运算节点输入和输出数据。"></a>使用feeds和fetches从运算节点输入和输出数据。</h3><p>TensorFlow计算框架要求所有的计算都表示成图，节点在图中被称为运算op(operation简称)。一个运算可以获得零个或者多个Tensors，经过计算，可以产生零个或者多个Tensors。一个Tensor是一个多维数组，举个例子，可以把一批图像数据表示成一个4维浮点数组[batch, height, width, channels]</p>
+<p>计算图是通过Session提交，一个Session决定图中的运算该到那个设备上去计算，比如是选CPU还是CPU。运算op产生的结果在python中是一个numpy.ndarray数组对象，在C和C++中是tensorflow::Tensor实例。</p>
+<p>如今在谷歌内部，TensorFlow已经得到了广泛的应用。在2015年10月26日，谷歌正式宣布通过TensorFlow实现的排序系统RankBrain上线。相比一些传统的排序算法，使用RankBrain的排序结果更能满足用户需求。在2015年彭博（Bloomberg）的报道中，谷歌透露了在谷歌上千种排序算法中，RankBrain是第三重要的排序算法。基于TensorFlow的系统RankBrain能在谷歌的核心网页搜索业务中占据如此重要的地位，可见TensorFlow在谷歌内部的重要性。包括网页搜索在内，TensorFlow已经被成功应用到了谷歌的各款产品之中。如今，在谷歌的语音搜索、广告、电商、图片、街景图、翻译、YouTube等众多产品之中都可以看到基于TensorFlow的系统。在经过半年的尝试和思考之后，谷歌的DeepMind团队也正式宣布其之后所有的研究都将使用TensorFlow作为实现深度学习算法的工具。</p>
+<p>除了在谷歌内部大规模使用之外，TensorFlow也受到了工业界和学术界的广泛关注。在Google I/O 2016的大会上，Jeff Dean提到已经有1500多个GitHub的代码库中提到了TensorFlow，而只有5个是谷歌官方提供的。如今，包括优步（Uber）、Snapchat、Twitter、京东、小米等国内外科技公司也纷纷加入了使用TensorFlow的行列。正如谷歌在TensorFlow开源原因中所提到的一样，TensorFlow正在建立一个标准，使得学术界可以更方便地交流学术研究成果，工业界可以更快地将机器学习应用于生产之中</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/10/20/Tensorflow/" data-id="ckgi20ib40000lsny25mfaieq" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/10/20/Tensorflow/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 liuzhentao<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
